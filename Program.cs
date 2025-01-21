@@ -112,10 +112,6 @@ namespace Lesson1_tempConverter
         {
             double celsius = 0;
             double fahrenheit = 0;
-
-            celsius = (dblNumToConvert - 32) * 5 / 9;
-            fahrenheit = (dblNumToConvert * 9 / 5) + 32;
-
             try
             {
                 celsius = Math.Round((dblNumToConvert - 32) * 5 / 9, 3);
@@ -139,8 +135,10 @@ namespace Lesson1_tempConverter
                 }
                 else
                 {
+                    Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.WriteLine($"{dblNumToConvert} degrees Celsius = {fahrenheit} degrees Fahrenheit");
                     Console.WriteLine($"{dblNumToConvert} degrees Fahrenheit = {celsius} degrees Celsius");
+                    Console.ResetColor();
                 }
             }
 

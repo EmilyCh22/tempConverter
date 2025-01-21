@@ -15,7 +15,7 @@ namespace Lesson1_tempConverter
                     intNumToConvert = 0;
                     dblNumToConvert = 0;
 
-                    Console.WriteLine("Enter the temp you want converted");
+                    Console.Write("Enter the temperature you want converted: ");
                     var numberToConvert = Console.ReadLine();
                     while (!double.TryParse(numberToConvert, out dblNumToConvert) && !int.TryParse(numberToConvert, out intNumToConvert))
                     {
